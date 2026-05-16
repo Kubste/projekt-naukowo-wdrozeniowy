@@ -1,0 +1,59 @@
+{
+    "decision_tree": {
+        "criterion": "friedman_mse",
+        "max_depth": 3,
+        "max_features": null,
+        "min_samples_leaf": 10,
+        "min_samples_split": 2,
+        "splitter": "random"
+    },
+    "random_forest": {
+        "max_depth": 2,
+        "max_features": "log2",
+        "max_samples": null,
+        "min_samples_leaf": 5,
+        "min_samples_split": 5,
+        "n_estimators": 50
+    },
+    "svr": {
+        "C": 0.01,
+        "coef0": 1.0,
+        "degree": 2,
+        "epsilon": 0.1,
+        "gamma": "auto",
+        "kernel": "poly"
+    },
+    "catboost": {
+        "depth": 6,
+        "iterations": 100,
+        "l2_leaf_reg": 10,
+        "learning_rate": 0.01,
+        "verbose": 0
+    },
+    "xgboost": {
+        "gamma": 0,
+        "learning_rate": 0.01,
+        "max_depth": 5,
+        "min_child_weight": 1,
+        "reg_alpha": 1.0,
+        "reg_lambda": 0.5,
+        "subsample": 0.5
+    },
+    "lgbm": {
+        "learning_rate": 0.01,
+        "max_depth": 10,
+        "min_child_samples": 50,
+        "num_leaves": 20,
+        "reg_alpha": 0,
+        "reg_lambda": 1.0,
+        "subsample": 0.5,
+        "verbose": -1
+    },
+    "mlp": {"activation": "tanh", 
+            "alpha": 0.1,
+            "hidden_layer_sizes": [32, 16],
+            "learning_rate": "constant", 
+            "learning_rate_init": 0.01, 
+            "max_iter": 1500,
+            "solver": "adam"}
+}
