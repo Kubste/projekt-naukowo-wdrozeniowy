@@ -11,7 +11,7 @@ from xgboost import XGBRegressor
 from lightgbm import LGBMRegressor
 from sklearn.model_selection import GridSearchCV
 
-data = pd.read_csv(os.path.join(DATASETS_PREPROCESSED_DIR,"Location_1_val.csv"))
+data = pd.read_csv(os.path.join(DATASETS_PREPROCESSED_DIR,"Location_1_train.csv"))
 targets = data["delta_p"]
 data = data.drop(columns=["time", "p_base", "delta_p"])
 
