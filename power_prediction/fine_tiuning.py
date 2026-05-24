@@ -110,6 +110,6 @@ for name, (model, params) in models.items():
     all_best_params[name] = gs.best_params_
     print(f"{name}: {gs.best_params_}")
 
-with open("best_params_all.json", "w") as f:
+with open("power_prediction/results/best_params_all.json", "w") as f:
     json.dump(all_best_params, f, indent=4)
 

@@ -180,3 +180,5 @@ dist-ssr
 *.sln
 *.sw?
 .keys
+
+catboost_info/

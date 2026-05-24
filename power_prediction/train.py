@@ -15,7 +15,7 @@ from lightgbm import LGBMRegressor
 from sklearn.metrics import mean_absolute_error, r2_score, mean_squared_error, mean_absolute_percentage_error
 
 
-with open("best_params_all.json", "r") as f:
+with open("power_prediction/results/best_params_all.json", "r") as f:
     all_best_params = json.load(f)
 
 
@@ -56,7 +56,7 @@ for name, model in models.items():
         print(f"{name}{i} done")
 
     # dataframe with metrics scores (each row is one location)
-    scores.to_csv(rf"power_prediction\scores\{name}_scores.csv")
+    scores.to_csv(rf"power_prediction\results\{name}_scores.csv")
 
 
 
