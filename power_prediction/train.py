@@ -35,6 +35,8 @@ for name, model in models.items():
     for i in range(1,5):
         # load train, test data
         data_train = pd.read_csv(os.path.join(DATASETS_PREPROCESSED_DIR,f"Location_{i}_train.csv"))
+        data_val = pd.read_csv(os.path.join(DATASETS_PREPROCESSED_DIR,f"Location_{i}_val.csv"))
+        data_train = pd.concat(data_train, data_val)
         y_train = data_train["delta_p"]
         X_train = data_train.drop(columns=["time", "p_base", "delta_p"])
         data_test = pd.read_csv(os.path.join(DATASETS_PREPROCESSED_DIR,f"Location_{i}_test.csv"))

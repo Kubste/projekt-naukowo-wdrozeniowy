@@ -8,7 +8,7 @@ from sklearn.ensemble import StackingRegressor
 from lightgbm import LGBMRegressor
 from sklearn.metrics import mean_absolute_error, r2_score, mean_squared_error, mean_absolute_percentage_error
 
-with open("best_params_all.json", "r") as f:
+with open(r"power_prediction\results\best_params_all.json", "r") as f:
     all_best_params = json.load(f)
 
 models = [
@@ -49,7 +49,7 @@ for i in range(1,5):
     scores.loc[i-1] = [mse, mae, r2, mape]
 
     with open(rf"power_prediction\models\stacking_model{i}.pkl", 'wb') as fo:
-        dump(model, fo)
+        dump(stacking_model, fo)
     print(f"{i} done")
 
 # dataframe with metrics scores (each row is one location)
