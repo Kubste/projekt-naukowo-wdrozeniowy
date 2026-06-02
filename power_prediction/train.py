@@ -12,6 +12,7 @@ from sklearn.neural_network import MLPRegressor
 from catboost import CatBoostRegressor
 from xgboost import XGBRegressor
 from lightgbm import LGBMRegressor
+from sklearn.model_selection import RepeatedStratifiedKFold
 from sklearn.metrics import mean_absolute_error, r2_score, mean_squared_error, mean_absolute_percentage_error
 
 
@@ -29,37 +30,58 @@ models = {
     "mlp":            MLPRegressor(**all_best_params["mlp"], early_stopping=True)
     }
 
+skf = RepeatedStratifiedKFold(n_splits=2, n_repeats=5, random_state=44)
+mean_scores = pd.DataFrame(columns=["model", "MSE", "MAE", "R^2", "MAPE"])
 
-for name, model in models.items():
-    scores = pd.DataFrame(columns=["MSE", "MAE", "R^2", "MAPE"])
-    for i in range(1,5):
-        # load train, test data
-        data_train = pd.read_csv(os.path.join(DATASETS_PREPROCESSED_DIR,f"Location_{i}_train.csv"))
-        data_val = pd.read_csv(os.path.join(DATASETS_PREPROCESSED_DIR,f"Location_{i}_val.csv"))
-        data_train = pd.concat(data_train, data_val)
-        y_train = data_train["delta_p"]
-        X_train = data_train.drop(columns=["time", "p_base", "delta_p"])
-        data_test = pd.read_csv(os.path.join(DATASETS_PREPROCESSED_DIR,f"Location_{i}_test.csv"))
-        y_test = data_test["delta_p"]
-        X_test = data_test.drop(columns=["time", "p_base", "delta_p"])
-        # train model
-        model = clone(model)
-        model.fit(X_train, y_train)
-        y_pred = model.predict(X_test)
-        # calculate metrics
-        mse = mean_squared_error(y_test, y_pred) 
-        mae = mean_absolute_error(y_test, y_pred)
-        r2 = r2_score(y_test, y_pred)
-        mape = mean_absolute_percentage_error(y_test, y_pred)
-        scores.loc[i-1] = [mse, mae, r2, mape]
+for i in range(1, 5):      # load train, test data
+    data_train = pd.read_csv(os.path.join(DATASETS_PREPROCESSED_DIR,f"Location_{i}_train.csv"))
+    data_test = pd.read_csv(os.path.join(DATASETS_PREPROCESSED_DIR,f"Location_{i}_test.csv"))
+    data = pd.concat([data_train, data_test])
+    targets = data["delta_p"]
+    data = data.drop(columns=["time", "p_base", "delta_p"])  
+    mean_scores = pd.DataFrame(columns=["model", "MSE", "MAE", "R^2", "MAPE"])
+    for name, model in models.items():
+        scores = pd.DataFrame(columns=["MSE", "MAE", "R^2", "MAPE"])
+        mse = 100
+        mae = 100
+        r2 = -10
+        mape = 100
+        for j, (train, test) in enumerate(skf.split(data, targets)):
+            cnt = 0
+            X_train = data.iloc[train]
+            y_train = targets.iloc[train]
+            X_test = data.iloc[test]
+            y_test = data.iloc[test]
+            # train model
+            model = clone(model)
+            model.fit(X_train, y_train)
+            y_pred = model.predict(X_test)
+            # calculate metrics
+            cur_mse = mean_squared_error(y_test, y_pred) 
+            cur_mae = mean_absolute_error(y_test, y_pred)
+            cur_r2 = r2_score(y_test, y_pred)
+            cur_mape = mean_absolute_percentage_error(y_test, y_pred)
+            scores.loc[j] = [i, cur_mse, cur_mae, cur_r2, cur_mape]
+            # check if model has better metric than current best
+            if cur_mse < mse:
+                cnt += 1
+            if cur_mae < mae:
+                cnt += 1
+            if cur_r2 > r2:
+                cnt += 1
+            # save if it is better in more than 2 metrics than current best
+            if cnt > 1:
+                with open(rf"power_prediction\models\{name}_loc{i}.pkl", 'wb') as fo:
+                    dump(model, fo)
 
-        with open(rf"power_prediction\models\{name}{i}.pkl", 'wb') as fo:
-            dump(model, fo)
+
         print(f"{name}{i} done")
+        # dataframe with metrics scores (each row is one split)
+        scores.to_csv(rf"power_prediction\results\location{i}\{name}_scores.csv")
+        mean_score = pd.Series({"model": name, "MSE": scores["MSE"].mean(), "MAE": scores["MAE"].mean(), "R^2": scores["R^2"].mean(), "MAPE": scores["MAPE"].mean()})
+        mean_scores = pd.concat([mean_scores, mean_score.to_frame().T], ignore_index=True)
 
-    # dataframe with metrics scores (each row is one location)
-    scores.to_csv(rf"power_prediction\results\{name}_scores.csv")
-
+    mean_scores.to_csv(rf"power_prediction\results\location{i}\avg_scores.csv")
 
 
 
