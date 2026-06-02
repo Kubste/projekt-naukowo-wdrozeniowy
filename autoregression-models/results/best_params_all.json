@@ -1,0 +1,1897 @@
+{
+  "decision_tree_h1_s1": {
+    "splitter": "best",
+    "min_samples_split": 5,
+    "min_samples_leaf": 5,
+    "max_features": null,
+    "max_depth": 5,
+    "criterion": "absolute_error"
+  },
+  "random_forest_h1_s1": {
+    "n_estimators": 50,
+    "min_samples_split": 10,
+    "min_samples_leaf": 2,
+    "max_samples": 0.8,
+    "max_features": null,
+    "max_depth": 3
+  },
+  "svr_h1_s1": {
+    "kernel": "linear",
+    "gamma": "scale",
+    "epsilon": 0.1,
+    "degree": 2,
+    "coef0": 1.0,
+    "C": 0.01
+  },
+  "catboost_h1_s1": {
+    "verbose": 0,
+    "learning_rate": 0.1,
+    "l2_leaf_reg": 10,
+    "iterations": 100,
+    "depth": 4
+  },
+  "xgboost_h1_s1": {
+    "subsample": 0.5,
+    "reg_lambda": 0.1,
+    "reg_alpha": 0,
+    "min_child_weight": 3,
+    "max_depth": 10,
+    "learning_rate": 0.05,
+    "gamma": 0.3
+  },
+  "lgbm_h1_s1": {
+    "verbose": -1,
+    "subsample": 0.5,
+    "reg_lambda": 0.1,
+    "reg_alpha": 1.0,
+    "num_leaves": 50,
+    "min_child_samples": 50,
+    "max_depth": 3,
+    "learning_rate": 0.05
+  },
+  "mlp_h1_s1": {
+    "solver": "adam",
+    "max_iter": 1500,
+    "learning_rate_init": 0.05,
+    "learning_rate": "adaptive",
+    "hidden_layer_sizes": [
+      32,
+      16
+    ],
+    "early_stopping": true,
+    "alpha": 0.001,
+    "activation": "relu"
+  },
+  "decision_tree_h1_s2": {
+    "splitter": "best",
+    "min_samples_split": 2,
+    "min_samples_leaf": 10,
+    "max_features": null,
+    "max_depth": 10,
+    "criterion": "absolute_error"
+  },
+  "random_forest_h1_s2": {
+    "n_estimators": 150,
+    "min_samples_split": 5,
+    "min_samples_leaf": 1,
+    "max_samples": 0.8,
+    "max_features": null,
+    "max_depth": 5
+  },
+  "svr_h1_s2": {
+    "kernel": "poly",
+    "gamma": "scale",
+    "epsilon": 0.1,
+    "degree": 2,
+    "coef0": 0.5,
+    "C": 0.1
+  },
+  "catboost_h1_s2": {
+    "verbose": 0,
+    "learning_rate": 0.1,
+    "l2_leaf_reg": 1,
+    "iterations": 100,
+    "depth": 6
+  },
+  "xgboost_h1_s2": {
+    "subsample": 0.8,
+    "reg_lambda": 0,
+    "reg_alpha": 0.5,
+    "min_child_weight": 1,
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "gamma": 0.1
+  },
+  "lgbm_h1_s2": {
+    "verbose": -1,
+    "subsample": 0.5,
+    "reg_lambda": 0.5,
+    "reg_alpha": 0.5,
+    "num_leaves": 31,
+    "min_child_samples": 50,
+    "max_depth": 3,
+    "learning_rate": 0.1
+  },
+  "mlp_h1_s2": {
+    "solver": "adam",
+    "max_iter": 1500,
+    "learning_rate_init": 0.05,
+    "learning_rate": "adaptive",
+    "hidden_layer_sizes": [
+      64
+    ],
+    "early_stopping": true,
+    "alpha": 0.001,
+    "activation": "relu"
+  },
+  "decision_tree_h1_s3": {
+    "splitter": "best",
+    "min_samples_split": 2,
+    "min_samples_leaf": 2,
+    "max_features": null,
+    "max_depth": 3,
+    "criterion": "squared_error"
+  },
+  "random_forest_h1_s3": {
+    "n_estimators": 150,
+    "min_samples_split": 5,
+    "min_samples_leaf": 5,
+    "max_samples": 0.7,
+    "max_features": null,
+    "max_depth": 5
+  },
+  "svr_h1_s3": {
+    "kernel": "rbf",
+    "gamma": "auto",
+    "epsilon": 0.01,
+    "degree": 4,
+    "coef0": 0.1,
+    "C": 0.5
+  },
+  "catboost_h1_s3": {
+    "verbose": 0,
+    "learning_rate": 0.1,
+    "l2_leaf_reg": 3,
+    "iterations": 100,
+    "depth": 4
+  },
+  "xgboost_h1_s3": {
+    "subsample": 0.8,
+    "reg_lambda": 0.1,
+    "reg_alpha": 0,
+    "min_child_weight": 3,
+    "max_depth": 7,
+    "learning_rate": 0.2,
+    "gamma": 0.3
+  },
+  "lgbm_h1_s3": {
+    "verbose": -1,
+    "subsample": 1.0,
+    "reg_lambda": 1.0,
+    "reg_alpha": 0.1,
+    "num_leaves": 50,
+    "min_child_samples": 50,
+    "max_depth": 3,
+    "learning_rate": 0.05
+  },
+  "mlp_h1_s3": {
+    "solver": "adam",
+    "max_iter": 2000,
+    "learning_rate_init": 0.05,
+    "learning_rate": "adaptive",
+    "hidden_layer_sizes": [
+      32,
+      16,
+      8
+    ],
+    "early_stopping": true,
+    "alpha": 0.001,
+    "activation": "tanh"
+  },
+  "decision_tree_h1_s4": {
+    "splitter": "best",
+    "min_samples_split": 5,
+    "min_samples_leaf": 1,
+    "max_features": null,
+    "max_depth": 5,
+    "criterion": "friedman_mse"
+  },
+  "random_forest_h1_s4": {
+    "n_estimators": 200,
+    "min_samples_split": 10,
+    "min_samples_leaf": 2,
+    "max_samples": 0.9,
+    "max_features": null,
+    "max_depth": 10
+  },
+  "svr_h1_s4": {
+    "kernel": "linear",
+    "gamma": "auto",
+    "epsilon": 0.1,
+    "degree": 2,
+    "coef0": 0.0,
+    "C": 0.01
+  },
+  "catboost_h1_s4": {
+    "verbose": 0,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 3,
+    "iterations": 300,
+    "depth": 4
+  },
+  "xgboost_h1_s4": {
+    "subsample": 0.8,
+    "reg_lambda": 0.5,
+    "reg_alpha": 0.5,
+    "min_child_weight": 5,
+    "max_depth": 5,
+    "learning_rate": 0.05,
+    "gamma": 0
+  },
+  "lgbm_h1_s4": {
+    "verbose": -1,
+    "subsample": 0.5,
+    "reg_lambda": 0.5,
+    "reg_alpha": 0.1,
+    "num_leaves": 40,
+    "min_child_samples": 10,
+    "max_depth": 3,
+    "learning_rate": 0.2
+  },
+  "mlp_h1_s4": {
+    "solver": "adam",
+    "max_iter": 2000,
+    "learning_rate_init": 0.05,
+    "learning_rate": "adaptive",
+    "hidden_layer_sizes": [
+      64,
+      32
+    ],
+    "early_stopping": true,
+    "alpha": 0.01,
+    "activation": "relu"
+  },
+  "decision_tree_h1_s5": {
+    "splitter": "random",
+    "min_samples_split": 2,
+    "min_samples_leaf": 10,
+    "max_features": null,
+    "max_depth": 20,
+    "criterion": "absolute_error"
+  },
+  "random_forest_h1_s5": {
+    "n_estimators": 100,
+    "min_samples_split": 2,
+    "min_samples_leaf": 1,
+    "max_samples": null,
+    "max_features": null,
+    "max_depth": 5
+  },
+  "svr_h1_s5": {
+    "kernel": "rbf",
+    "gamma": "scale",
+    "epsilon": 0.1,
+    "degree": 4,
+    "coef0": 0.1,
+    "C": 0.1
+  },
+  "catboost_h1_s5": {
+    "verbose": 0,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 1,
+    "iterations": 500,
+    "depth": 4
+  },
+  "xgboost_h1_s5": {
+    "subsample": 0.5,
+    "reg_lambda": 0,
+    "reg_alpha": 1.0,
+    "min_child_weight": 1,
+    "max_depth": 3,
+    "learning_rate": 0.2,
+    "gamma": 0
+  },
+  "lgbm_h1_s5": {
+    "verbose": -1,
+    "subsample": 1.0,
+    "reg_lambda": 1.0,
+    "reg_alpha": 1.0,
+    "num_leaves": 20,
+    "min_child_samples": 10,
+    "max_depth": 15,
+    "learning_rate": 0.1
+  },
+  "mlp_h1_s5": {
+    "solver": "adam",
+    "max_iter": 1500,
+    "learning_rate_init": 0.05,
+    "learning_rate": "adaptive",
+    "hidden_layer_sizes": [
+      32,
+      16
+    ],
+    "early_stopping": true,
+    "alpha": 0.001,
+    "activation": "relu"
+  },
+  "decision_tree_h1_s6": {
+    "splitter": "random",
+    "min_samples_split": 20,
+    "min_samples_leaf": 2,
+    "max_features": null,
+    "max_depth": 5,
+    "criterion": "absolute_error"
+  },
+  "random_forest_h1_s6": {
+    "n_estimators": 200,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_samples": 0.8,
+    "max_features": null,
+    "max_depth": 10
+  },
+  "svr_h1_s6": {
+    "kernel": "rbf",
+    "gamma": "auto",
+    "epsilon": 0.01,
+    "degree": 3,
+    "coef0": 0.5,
+    "C": 0.5
+  },
+  "catboost_h1_s6": {
+    "verbose": 0,
+    "learning_rate": 0.1,
+    "l2_leaf_reg": 1,
+    "iterations": 300,
+    "depth": 6
+  },
+  "xgboost_h1_s6": {
+    "subsample": 0.5,
+    "reg_lambda": 0.1,
+    "reg_alpha": 1.0,
+    "min_child_weight": 5,
+    "max_depth": 3,
+    "learning_rate": 0.2,
+    "gamma": 0
+  },
+  "lgbm_h1_s6": {
+    "verbose": -1,
+    "subsample": 1.0,
+    "reg_lambda": 1.0,
+    "reg_alpha": 1.0,
+    "num_leaves": 31,
+    "min_child_samples": 50,
+    "max_depth": 10,
+    "learning_rate": 0.1
+  },
+  "mlp_h1_s6": {
+    "solver": "adam",
+    "max_iter": 1000,
+    "learning_rate_init": 0.001,
+    "learning_rate": "adaptive",
+    "hidden_layer_sizes": [
+      64,
+      32,
+      16
+    ],
+    "early_stopping": true,
+    "alpha": 0.01,
+    "activation": "tanh"
+  },
+  "decision_tree_h1_s7": {
+    "splitter": "best",
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_features": null,
+    "max_depth": 5,
+    "criterion": "friedman_mse"
+  },
+  "random_forest_h1_s7": {
+    "n_estimators": 200,
+    "min_samples_split": 2,
+    "min_samples_leaf": 2,
+    "max_samples": null,
+    "max_features": null,
+    "max_depth": 10
+  },
+  "svr_h1_s7": {
+    "kernel": "linear",
+    "gamma": "scale",
+    "epsilon": 0.5,
+    "degree": 3,
+    "coef0": 0.0,
+    "C": 0.5
+  },
+  "catboost_h1_s7": {
+    "verbose": 0,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 10,
+    "iterations": 500,
+    "depth": 6
+  },
+  "xgboost_h1_s7": {
+    "subsample": 0.8,
+    "reg_lambda": 0,
+    "reg_alpha": 0,
+    "min_child_weight": 3,
+    "max_depth": 7,
+    "learning_rate": 0.05,
+    "gamma": 0
+  },
+  "lgbm_h1_s7": {
+    "verbose": -1,
+    "subsample": 0.5,
+    "reg_lambda": 1.0,
+    "reg_alpha": 0,
+    "num_leaves": 50,
+    "min_child_samples": 50,
+    "max_depth": 10,
+    "learning_rate": 0.05
+  },
+  "mlp_h1_s7": {
+    "solver": "adam",
+    "max_iter": 2000,
+    "learning_rate_init": 0.001,
+    "learning_rate": "adaptive",
+    "hidden_layer_sizes": [
+      32,
+      16,
+      8
+    ],
+    "early_stopping": true,
+    "alpha": 0.001,
+    "activation": "relu"
+  },
+  "decision_tree_h1_s8": {
+    "splitter": "best",
+    "min_samples_split": 2,
+    "min_samples_leaf": 2,
+    "max_features": 0.5,
+    "max_depth": 5,
+    "criterion": "absolute_error"
+  },
+  "random_forest_h1_s8": {
+    "n_estimators": 100,
+    "min_samples_split": 2,
+    "min_samples_leaf": 5,
+    "max_samples": 0.8,
+    "max_features": null,
+    "max_depth": 10
+  },
+  "svr_h1_s8": {
+    "kernel": "linear",
+    "gamma": "scale",
+    "epsilon": 0.5,
+    "degree": 2,
+    "coef0": 0.5,
+    "C": 0.5
+  },
+  "catboost_h1_s8": {
+    "verbose": 0,
+    "learning_rate": 0.1,
+    "l2_leaf_reg": 3,
+    "iterations": 500,
+    "depth": 4
+  },
+  "xgboost_h1_s8": {
+    "subsample": 0.8,
+    "reg_lambda": 0,
+    "reg_alpha": 0.5,
+    "min_child_weight": 1,
+    "max_depth": 5,
+    "learning_rate": 0.1,
+    "gamma": 0
+  },
+  "lgbm_h1_s8": {
+    "verbose": -1,
+    "subsample": 0.5,
+    "reg_lambda": 0.1,
+    "reg_alpha": 0.5,
+    "num_leaves": 50,
+    "min_child_samples": 20,
+    "max_depth": 5,
+    "learning_rate": 0.1
+  },
+  "mlp_h1_s8": {
+    "solver": "adam",
+    "max_iter": 1000,
+    "learning_rate_init": 0.001,
+    "learning_rate": "adaptive",
+    "hidden_layer_sizes": [
+      64
+    ],
+    "early_stopping": true,
+    "alpha": 0.01,
+    "activation": "tanh"
+  },
+  "decision_tree_h1_s9": {
+    "splitter": "best",
+    "min_samples_split": 20,
+    "min_samples_leaf": 2,
+    "max_features": null,
+    "max_depth": 5,
+    "criterion": "squared_error"
+  },
+  "random_forest_h1_s9": {
+    "n_estimators": 200,
+    "min_samples_split": 2,
+    "min_samples_leaf": 2,
+    "max_samples": 0.7,
+    "max_features": 0.5,
+    "max_depth": 10
+  },
+  "svr_h1_s9": {
+    "kernel": "linear",
+    "gamma": "auto",
+    "epsilon": 0.1,
+    "degree": 3,
+    "coef0": 0.1,
+    "C": 0.01
+  },
+  "catboost_h1_s9": {
+    "verbose": 0,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 5,
+    "iterations": 500,
+    "depth": 8
+  },
+  "xgboost_h1_s9": {
+    "subsample": 1.0,
+    "reg_lambda": 0.5,
+    "reg_alpha": 1.0,
+    "min_child_weight": 5,
+    "max_depth": 5,
+    "learning_rate": 0.1,
+    "gamma": 0
+  },
+  "lgbm_h1_s9": {
+    "verbose": -1,
+    "subsample": 0.5,
+    "reg_lambda": 0.5,
+    "reg_alpha": 0.1,
+    "num_leaves": 40,
+    "min_child_samples": 50,
+    "max_depth": 15,
+    "learning_rate": 0.1
+  },
+  "mlp_h1_s9": {
+    "solver": "adam",
+    "max_iter": 1000,
+    "learning_rate_init": 0.01,
+    "learning_rate": "constant",
+    "hidden_layer_sizes": [
+      32,
+      16,
+      8
+    ],
+    "early_stopping": true,
+    "alpha": 0.001,
+    "activation": "relu"
+  },
+  "decision_tree_h1_s10": {
+    "splitter": "best",
+    "min_samples_split": 5,
+    "min_samples_leaf": 10,
+    "max_features": null,
+    "max_depth": 5,
+    "criterion": "absolute_error"
+  },
+  "random_forest_h1_s10": {
+    "n_estimators": 100,
+    "min_samples_split": 2,
+    "min_samples_leaf": 5,
+    "max_samples": 0.7,
+    "max_features": 0.5,
+    "max_depth": 10
+  },
+  "svr_h1_s10": {
+    "kernel": "linear",
+    "gamma": "auto",
+    "epsilon": 0.1,
+    "degree": 3,
+    "coef0": 1.0,
+    "C": 0.01
+  },
+  "catboost_h1_s10": {
+    "verbose": 0,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 1,
+    "iterations": 500,
+    "depth": 8
+  },
+  "xgboost_h1_s10": {
+    "subsample": 0.5,
+    "reg_lambda": 0.1,
+    "reg_alpha": 0.5,
+    "min_child_weight": 5,
+    "max_depth": 7,
+    "learning_rate": 0.05,
+    "gamma": 0
+  },
+  "lgbm_h1_s10": {
+    "verbose": -1,
+    "subsample": 0.5,
+    "reg_lambda": 1.0,
+    "reg_alpha": 0.1,
+    "num_leaves": 31,
+    "min_child_samples": 50,
+    "max_depth": 10,
+    "learning_rate": 0.1
+  },
+  "mlp_h1_s10": {
+    "solver": "sgd",
+    "max_iter": 1500,
+    "learning_rate_init": 0.01,
+    "learning_rate": "adaptive",
+    "hidden_layer_sizes": [
+      32,
+      16
+    ],
+    "early_stopping": true,
+    "alpha": 0.001,
+    "activation": "tanh"
+  },
+  "decision_tree_h24_s1": {
+    "splitter": "best",
+    "min_samples_split": 20,
+    "min_samples_leaf": 10,
+    "max_features": "log2",
+    "max_depth": 3,
+    "criterion": "absolute_error"
+  },
+  "random_forest_h24_s1": {
+    "n_estimators": 200,
+    "min_samples_split": 2,
+    "min_samples_leaf": 2,
+    "max_samples": null,
+    "max_features": "sqrt",
+    "max_depth": 2
+  },
+  "svr_h24_s1": {
+    "kernel": "rbf",
+    "gamma": "scale",
+    "epsilon": 0.1,
+    "degree": 4,
+    "coef0": 0.1,
+    "C": 0.1
+  },
+  "catboost_h24_s1": {
+    "verbose": 0,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 1,
+    "iterations": 100,
+    "depth": 8
+  },
+  "xgboost_h24_s1": {
+    "subsample": 0.5,
+    "reg_lambda": 0,
+    "reg_alpha": 0,
+    "min_child_weight": 5,
+    "max_depth": 5,
+    "learning_rate": 0.01,
+    "gamma": 0.3
+  },
+  "lgbm_h24_s1": {
+    "verbose": -1,
+    "subsample": 0.5,
+    "reg_lambda": 0.1,
+    "reg_alpha": 0.5,
+    "num_leaves": 40,
+    "min_child_samples": 50,
+    "max_depth": 3,
+    "learning_rate": 0.01
+  },
+  "mlp_h24_s1": {
+    "solver": "sgd",
+    "max_iter": 1500,
+    "learning_rate_init": 0.05,
+    "learning_rate": "constant",
+    "hidden_layer_sizes": [
+      32
+    ],
+    "early_stopping": true,
+    "alpha": 0.001,
+    "activation": "relu"
+  },
+  "decision_tree_h24_s2": {
+    "splitter": "random",
+    "min_samples_split": 5,
+    "min_samples_leaf": 10,
+    "max_features": "log2",
+    "max_depth": 3,
+    "criterion": "absolute_error"
+  },
+  "random_forest_h24_s2": {
+    "n_estimators": 150,
+    "min_samples_split": 10,
+    "min_samples_leaf": 2,
+    "max_samples": 0.7,
+    "max_features": "log2",
+    "max_depth": 3
+  },
+  "svr_h24_s2": {
+    "kernel": "rbf",
+    "gamma": "auto",
+    "epsilon": 0.1,
+    "degree": 4,
+    "coef0": 0.5,
+    "C": 0.01
+  },
+  "catboost_h24_s2": {
+    "verbose": 0,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 10,
+    "iterations": 300,
+    "depth": 6
+  },
+  "xgboost_h24_s2": {
+    "subsample": 0.5,
+    "reg_lambda": 0.1,
+    "reg_alpha": 1.0,
+    "min_child_weight": 5,
+    "max_depth": 7,
+    "learning_rate": 0.01,
+    "gamma": 0.3
+  },
+  "lgbm_h24_s2": {
+    "verbose": -1,
+    "subsample": 0.5,
+    "reg_lambda": 0.1,
+    "reg_alpha": 1.0,
+    "num_leaves": 31,
+    "min_child_samples": 20,
+    "max_depth": 15,
+    "learning_rate": 0.01
+  },
+  "mlp_h24_s2": {
+    "solver": "sgd",
+    "max_iter": 1500,
+    "learning_rate_init": 0.05,
+    "learning_rate": "adaptive",
+    "hidden_layer_sizes": [
+      32,
+      16
+    ],
+    "early_stopping": true,
+    "alpha": 0.01,
+    "activation": "relu"
+  },
+  "decision_tree_h24_s3": {
+    "splitter": "best",
+    "min_samples_split": 2,
+    "min_samples_leaf": 1,
+    "max_features": null,
+    "max_depth": 3,
+    "criterion": "squared_error"
+  },
+  "random_forest_h24_s3": {
+    "n_estimators": 100,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_samples": 0.8,
+    "max_features": "sqrt",
+    "max_depth": 2
+  },
+  "svr_h24_s3": {
+    "kernel": "rbf",
+    "gamma": "scale",
+    "epsilon": 0.1,
+    "degree": 3,
+    "coef0": 0.1,
+    "C": 0.5
+  },
+  "catboost_h24_s3": {
+    "verbose": 0,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 5,
+    "iterations": 300,
+    "depth": 4
+  },
+  "xgboost_h24_s3": {
+    "subsample": 0.5,
+    "reg_lambda": 1.0,
+    "reg_alpha": 1.0,
+    "min_child_weight": 1,
+    "max_depth": 5,
+    "learning_rate": 0.05,
+    "gamma": 0.3
+  },
+  "lgbm_h24_s3": {
+    "verbose": -1,
+    "subsample": 0.8,
+    "reg_lambda": 0,
+    "reg_alpha": 0.5,
+    "num_leaves": 20,
+    "min_child_samples": 50,
+    "max_depth": 5,
+    "learning_rate": 0.01
+  },
+  "mlp_h24_s3": {
+    "solver": "sgd",
+    "max_iter": 2000,
+    "learning_rate_init": 0.05,
+    "learning_rate": "adaptive",
+    "hidden_layer_sizes": [
+      64
+    ],
+    "early_stopping": true,
+    "alpha": 0.01,
+    "activation": "relu"
+  },
+  "decision_tree_h24_s4": {
+    "splitter": "random",
+    "min_samples_split": 10,
+    "min_samples_leaf": 2,
+    "max_features": null,
+    "max_depth": 3,
+    "criterion": "friedman_mse"
+  },
+  "random_forest_h24_s4": {
+    "n_estimators": 200,
+    "min_samples_split": 2,
+    "min_samples_leaf": 1,
+    "max_samples": null,
+    "max_features": "sqrt",
+    "max_depth": 5
+  },
+  "svr_h24_s4": {
+    "kernel": "rbf",
+    "gamma": "auto",
+    "epsilon": 0.1,
+    "degree": 3,
+    "coef0": 0.0,
+    "C": 0.01
+  },
+  "catboost_h24_s4": {
+    "verbose": 0,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 5,
+    "iterations": 300,
+    "depth": 6
+  },
+  "xgboost_h24_s4": {
+    "subsample": 1.0,
+    "reg_lambda": 0.5,
+    "reg_alpha": 1.0,
+    "min_child_weight": 5,
+    "max_depth": 7,
+    "learning_rate": 0.01,
+    "gamma": 0.3
+  },
+  "lgbm_h24_s4": {
+    "verbose": -1,
+    "subsample": 0.8,
+    "reg_lambda": 1.0,
+    "reg_alpha": 0.5,
+    "num_leaves": 31,
+    "min_child_samples": 10,
+    "max_depth": 15,
+    "learning_rate": 0.01
+  },
+  "mlp_h24_s4": {
+    "solver": "adam",
+    "max_iter": 2000,
+    "learning_rate_init": 0.001,
+    "learning_rate": "constant",
+    "hidden_layer_sizes": [
+      32,
+      16,
+      8
+    ],
+    "early_stopping": true,
+    "alpha": 0.1,
+    "activation": "tanh"
+  },
+  "decision_tree_h24_s5": {
+    "splitter": "random",
+    "min_samples_split": 5,
+    "min_samples_leaf": 10,
+    "max_features": 0.5,
+    "max_depth": 3,
+    "criterion": "absolute_error"
+  },
+  "random_forest_h24_s5": {
+    "n_estimators": 50,
+    "min_samples_split": 2,
+    "min_samples_leaf": 5,
+    "max_samples": 0.8,
+    "max_features": "sqrt",
+    "max_depth": 3
+  },
+  "svr_h24_s5": {
+    "kernel": "rbf",
+    "gamma": "auto",
+    "epsilon": 0.1,
+    "degree": 4,
+    "coef0": 1.0,
+    "C": 0.1
+  },
+  "catboost_h24_s5": {
+    "verbose": 0,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 3,
+    "iterations": 300,
+    "depth": 6
+  },
+  "xgboost_h24_s5": {
+    "subsample": 0.5,
+    "reg_lambda": 0.5,
+    "reg_alpha": 0.1,
+    "min_child_weight": 1,
+    "max_depth": 5,
+    "learning_rate": 0.01,
+    "gamma": 0
+  },
+  "lgbm_h24_s5": {
+    "verbose": -1,
+    "subsample": 0.8,
+    "reg_lambda": 0,
+    "reg_alpha": 0,
+    "num_leaves": 31,
+    "min_child_samples": 20,
+    "max_depth": 5,
+    "learning_rate": 0.01
+  },
+  "mlp_h24_s5": {
+    "solver": "sgd",
+    "max_iter": 1000,
+    "learning_rate_init": 0.05,
+    "learning_rate": "constant",
+    "hidden_layer_sizes": [
+      32,
+      16
+    ],
+    "early_stopping": true,
+    "alpha": 0.1,
+    "activation": "tanh"
+  },
+  "decision_tree_h24_s6": {
+    "splitter": "random",
+    "min_samples_split": 10,
+    "min_samples_leaf": 10,
+    "max_features": "sqrt",
+    "max_depth": 3,
+    "criterion": "squared_error"
+  },
+  "random_forest_h24_s6": {
+    "n_estimators": 100,
+    "min_samples_split": 5,
+    "min_samples_leaf": 5,
+    "max_samples": null,
+    "max_features": "log2",
+    "max_depth": 3
+  },
+  "svr_h24_s6": {
+    "kernel": "linear",
+    "gamma": "scale",
+    "epsilon": 0.5,
+    "degree": 3,
+    "coef0": 0.1,
+    "C": 0.01
+  },
+  "catboost_h24_s6": {
+    "verbose": 0,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 5,
+    "iterations": 300,
+    "depth": 4
+  },
+  "xgboost_h24_s6": {
+    "subsample": 0.5,
+    "reg_lambda": 0.5,
+    "reg_alpha": 0.5,
+    "min_child_weight": 1,
+    "max_depth": 5,
+    "learning_rate": 0.01,
+    "gamma": 0.1
+  },
+  "lgbm_h24_s6": {
+    "verbose": -1,
+    "subsample": 0.5,
+    "reg_lambda": 0.1,
+    "reg_alpha": 0.5,
+    "num_leaves": 31,
+    "min_child_samples": 50,
+    "max_depth": 5,
+    "learning_rate": 0.01
+  },
+  "mlp_h24_s6": {
+    "solver": "adam",
+    "max_iter": 1500,
+    "learning_rate_init": 0.001,
+    "learning_rate": "constant",
+    "hidden_layer_sizes": [
+      64,
+      32,
+      16
+    ],
+    "early_stopping": true,
+    "alpha": 0.1,
+    "activation": "tanh"
+  },
+  "decision_tree_h24_s7": {
+    "splitter": "random",
+    "min_samples_split": 20,
+    "min_samples_leaf": 5,
+    "max_features": null,
+    "max_depth": 3,
+    "criterion": "absolute_error"
+  },
+  "random_forest_h24_s7": {
+    "n_estimators": 100,
+    "min_samples_split": 10,
+    "min_samples_leaf": 1,
+    "max_samples": 0.8,
+    "max_features": "log2",
+    "max_depth": 2
+  },
+  "svr_h24_s7": {
+    "kernel": "sigmoid",
+    "gamma": "scale",
+    "epsilon": 0.5,
+    "degree": 2,
+    "coef0": 1.0,
+    "C": 0.1
+  },
+  "catboost_h24_s7": {
+    "verbose": 0,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 5,
+    "iterations": 100,
+    "depth": 10
+  },
+  "xgboost_h24_s7": {
+    "subsample": 0.5,
+    "reg_lambda": 0.1,
+    "reg_alpha": 1.0,
+    "min_child_weight": 3,
+    "max_depth": 10,
+    "learning_rate": 0.01,
+    "gamma": 0
+  },
+  "lgbm_h24_s7": {
+    "verbose": -1,
+    "subsample": 0.8,
+    "reg_lambda": 0,
+    "reg_alpha": 1.0,
+    "num_leaves": 40,
+    "min_child_samples": 20,
+    "max_depth": 10,
+    "learning_rate": 0.01
+  },
+  "mlp_h24_s7": {
+    "solver": "sgd",
+    "max_iter": 2000,
+    "learning_rate_init": 0.001,
+    "learning_rate": "constant",
+    "hidden_layer_sizes": [
+      32,
+      16,
+      8
+    ],
+    "early_stopping": true,
+    "alpha": 0.1,
+    "activation": "relu"
+  },
+  "decision_tree_h24_s8": {
+    "splitter": "best",
+    "min_samples_split": 20,
+    "min_samples_leaf": 5,
+    "max_features": null,
+    "max_depth": 3,
+    "criterion": "absolute_error"
+  },
+  "random_forest_h24_s8": {
+    "n_estimators": 50,
+    "min_samples_split": 10,
+    "min_samples_leaf": 1,
+    "max_samples": 0.7,
+    "max_features": "log2",
+    "max_depth": 5
+  },
+  "svr_h24_s8": {
+    "kernel": "sigmoid",
+    "gamma": "auto",
+    "epsilon": 0.5,
+    "degree": 3,
+    "coef0": 0.5,
+    "C": 0.01
+  },
+  "catboost_h24_s8": {
+    "verbose": 0,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 3,
+    "iterations": 100,
+    "depth": 8
+  },
+  "xgboost_h24_s8": {
+    "subsample": 0.8,
+    "reg_lambda": 1.0,
+    "reg_alpha": 1.0,
+    "min_child_weight": 1,
+    "max_depth": 7,
+    "learning_rate": 0.01,
+    "gamma": 0.3
+  },
+  "lgbm_h24_s8": {
+    "verbose": -1,
+    "subsample": 0.8,
+    "reg_lambda": 0.5,
+    "reg_alpha": 0.5,
+    "num_leaves": 40,
+    "min_child_samples": 50,
+    "max_depth": 15,
+    "learning_rate": 0.01
+  },
+  "mlp_h24_s8": {
+    "solver": "sgd",
+    "max_iter": 2000,
+    "learning_rate_init": 0.01,
+    "learning_rate": "adaptive",
+    "hidden_layer_sizes": [
+      64,
+      32,
+      16
+    ],
+    "early_stopping": true,
+    "alpha": 0.1,
+    "activation": "tanh"
+  },
+  "decision_tree_h24_s9": {
+    "splitter": "random",
+    "min_samples_split": 10,
+    "min_samples_leaf": 1,
+    "max_features": "log2",
+    "max_depth": 3,
+    "criterion": "squared_error"
+  },
+  "random_forest_h24_s9": {
+    "n_estimators": 100,
+    "min_samples_split": 10,
+    "min_samples_leaf": 5,
+    "max_samples": 0.8,
+    "max_features": "sqrt",
+    "max_depth": 5
+  },
+  "svr_h24_s9": {
+    "kernel": "sigmoid",
+    "gamma": "auto",
+    "epsilon": 0.5,
+    "degree": 4,
+    "coef0": 1.0,
+    "C": 0.01
+  },
+  "catboost_h24_s9": {
+    "verbose": 0,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 10,
+    "iterations": 300,
+    "depth": 4
+  },
+  "xgboost_h24_s9": {
+    "subsample": 0.5,
+    "reg_lambda": 0.5,
+    "reg_alpha": 0.5,
+    "min_child_weight": 5,
+    "max_depth": 7,
+    "learning_rate": 0.01,
+    "gamma": 0
+  },
+  "lgbm_h24_s9": {
+    "verbose": -1,
+    "subsample": 0.5,
+    "reg_lambda": 0.1,
+    "reg_alpha": 0.5,
+    "num_leaves": 40,
+    "min_child_samples": 10,
+    "max_depth": 15,
+    "learning_rate": 0.01
+  },
+  "mlp_h24_s9": {
+    "solver": "adam",
+    "max_iter": 1000,
+    "learning_rate_init": 0.05,
+    "learning_rate": "constant",
+    "hidden_layer_sizes": [
+      64,
+      32,
+      16
+    ],
+    "early_stopping": true,
+    "alpha": 0.1,
+    "activation": "relu"
+  },
+  "decision_tree_h24_s10": {
+    "splitter": "best",
+    "min_samples_split": 2,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "max_depth": 3,
+    "criterion": "squared_error"
+  },
+  "random_forest_h24_s10": {
+    "n_estimators": 200,
+    "min_samples_split": 2,
+    "min_samples_leaf": 2,
+    "max_samples": 0.8,
+    "max_features": "log2",
+    "max_depth": 5
+  },
+  "svr_h24_s10": {
+    "kernel": "poly",
+    "gamma": "scale",
+    "epsilon": 0.5,
+    "degree": 2,
+    "coef0": 0.1,
+    "C": 0.1
+  },
+  "catboost_h24_s10": {
+    "verbose": 0,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 5,
+    "iterations": 300,
+    "depth": 10
+  },
+  "xgboost_h24_s10": {
+    "subsample": 0.5,
+    "reg_lambda": 0,
+    "reg_alpha": 0.1,
+    "min_child_weight": 3,
+    "max_depth": 5,
+    "learning_rate": 0.01,
+    "gamma": 0.3
+  },
+  "lgbm_h24_s10": {
+    "verbose": -1,
+    "subsample": 0.8,
+    "reg_lambda": 0.5,
+    "reg_alpha": 1.0,
+    "num_leaves": 31,
+    "min_child_samples": 20,
+    "max_depth": 3,
+    "learning_rate": 0.05
+  },
+  "mlp_h24_s10": {
+    "solver": "adam",
+    "max_iter": 1000,
+    "learning_rate_init": 0.01,
+    "learning_rate": "constant",
+    "hidden_layer_sizes": [
+      64,
+      32,
+      16
+    ],
+    "early_stopping": true,
+    "alpha": 0.1,
+    "activation": "tanh"
+  },
+  "decision_tree_h48_s1": {
+    "splitter": "random",
+    "min_samples_split": 20,
+    "min_samples_leaf": 10,
+    "max_features": "sqrt",
+    "max_depth": 3,
+    "criterion": "absolute_error"
+  },
+  "random_forest_h48_s1": {
+    "n_estimators": 50,
+    "min_samples_split": 2,
+    "min_samples_leaf": 2,
+    "max_samples": 0.7,
+    "max_features": "log2",
+    "max_depth": 2
+  },
+  "svr_h48_s1": {
+    "kernel": "rbf",
+    "gamma": "auto",
+    "epsilon": 0.01,
+    "degree": 2,
+    "coef0": 0.0,
+    "C": 0.01
+  },
+  "catboost_h48_s1": {
+    "verbose": 0,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 10,
+    "iterations": 100,
+    "depth": 6
+  },
+  "xgboost_h48_s1": {
+    "subsample": 0.8,
+    "reg_lambda": 1.0,
+    "reg_alpha": 0.5,
+    "min_child_weight": 3,
+    "max_depth": 3,
+    "learning_rate": 0.01,
+    "gamma": 0
+  },
+  "lgbm_h48_s1": {
+    "verbose": -1,
+    "subsample": 1.0,
+    "reg_lambda": 0.5,
+    "reg_alpha": 0.5,
+    "num_leaves": 20,
+    "min_child_samples": 50,
+    "max_depth": 3,
+    "learning_rate": 0.01
+  },
+  "mlp_h48_s1": {
+    "solver": "sgd",
+    "max_iter": 1000,
+    "learning_rate_init": 0.05,
+    "learning_rate": "adaptive",
+    "hidden_layer_sizes": [
+      64
+    ],
+    "early_stopping": true,
+    "alpha": 0.001,
+    "activation": "relu"
+  },
+  "decision_tree_h48_s2": {
+    "splitter": "best",
+    "min_samples_split": 2,
+    "min_samples_leaf": 2,
+    "max_features": "log2",
+    "max_depth": 3,
+    "criterion": "friedman_mse"
+  },
+  "random_forest_h48_s2": {
+    "n_estimators": 200,
+    "min_samples_split": 5,
+    "min_samples_leaf": 5,
+    "max_samples": 0.8,
+    "max_features": "sqrt",
+    "max_depth": 2
+  },
+  "svr_h48_s2": {
+    "kernel": "sigmoid",
+    "gamma": "scale",
+    "epsilon": 0.5,
+    "degree": 3,
+    "coef0": 0.5,
+    "C": 0.1
+  },
+  "catboost_h48_s2": {
+    "verbose": 0,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 10,
+    "iterations": 100,
+    "depth": 10
+  },
+  "xgboost_h48_s2": {
+    "subsample": 0.5,
+    "reg_lambda": 0.5,
+    "reg_alpha": 0.5,
+    "min_child_weight": 1,
+    "max_depth": 7,
+    "learning_rate": 0.01,
+    "gamma": 0
+  },
+  "lgbm_h48_s2": {
+    "verbose": -1,
+    "subsample": 0.8,
+    "reg_lambda": 0.5,
+    "reg_alpha": 1.0,
+    "num_leaves": 50,
+    "min_child_samples": 20,
+    "max_depth": 5,
+    "learning_rate": 0.01
+  },
+  "mlp_h48_s2": {
+    "solver": "adam",
+    "max_iter": 2000,
+    "learning_rate_init": 0.05,
+    "learning_rate": "adaptive",
+    "hidden_layer_sizes": [
+      32,
+      16
+    ],
+    "early_stopping": true,
+    "alpha": 0.1,
+    "activation": "relu"
+  },
+  "decision_tree_h48_s3": {
+    "splitter": "random",
+    "min_samples_split": 20,
+    "min_samples_leaf": 2,
+    "max_features": "log2",
+    "max_depth": 5,
+    "criterion": "squared_error"
+  },
+  "random_forest_h48_s3": {
+    "n_estimators": 200,
+    "min_samples_split": 10,
+    "min_samples_leaf": 5,
+    "max_samples": 0.9,
+    "max_features": "log2",
+    "max_depth": 3
+  },
+  "svr_h48_s3": {
+    "kernel": "rbf",
+    "gamma": "auto",
+    "epsilon": 0.1,
+    "degree": 2,
+    "coef0": 1.0,
+    "C": 0.01
+  },
+  "catboost_h48_s3": {
+    "verbose": 0,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 1,
+    "iterations": 100,
+    "depth": 10
+  },
+  "xgboost_h48_s3": {
+    "subsample": 0.8,
+    "reg_lambda": 0.5,
+    "reg_alpha": 1.0,
+    "min_child_weight": 1,
+    "max_depth": 10,
+    "learning_rate": 0.01,
+    "gamma": 0.3
+  },
+  "lgbm_h48_s3": {
+    "verbose": -1,
+    "subsample": 1.0,
+    "reg_lambda": 1.0,
+    "reg_alpha": 0.5,
+    "num_leaves": 50,
+    "min_child_samples": 50,
+    "max_depth": 3,
+    "learning_rate": 0.01
+  },
+  "mlp_h48_s3": {
+    "solver": "sgd",
+    "max_iter": 1500,
+    "learning_rate_init": 0.05,
+    "learning_rate": "constant",
+    "hidden_layer_sizes": [
+      32,
+      16
+    ],
+    "early_stopping": true,
+    "alpha": 0.001,
+    "activation": "relu"
+  },
+  "decision_tree_h48_s4": {
+    "splitter": "best",
+    "min_samples_split": 5,
+    "min_samples_leaf": 10,
+    "max_features": 0.5,
+    "max_depth": 3,
+    "criterion": "absolute_error"
+  },
+  "random_forest_h48_s4": {
+    "n_estimators": 200,
+    "min_samples_split": 2,
+    "min_samples_leaf": 2,
+    "max_samples": 0.7,
+    "max_features": 0.5,
+    "max_depth": 3
+  },
+  "svr_h48_s4": {
+    "kernel": "poly",
+    "gamma": "scale",
+    "epsilon": 0.5,
+    "degree": 2,
+    "coef0": 0.5,
+    "C": 0.01
+  },
+  "catboost_h48_s4": {
+    "verbose": 0,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 1,
+    "iterations": 300,
+    "depth": 6
+  },
+  "xgboost_h48_s4": {
+    "subsample": 1.0,
+    "reg_lambda": 1.0,
+    "reg_alpha": 0.5,
+    "min_child_weight": 1,
+    "max_depth": 3,
+    "learning_rate": 0.2,
+    "gamma": 0.3
+  },
+  "lgbm_h48_s4": {
+    "verbose": -1,
+    "subsample": 1.0,
+    "reg_lambda": 0.5,
+    "reg_alpha": 0.5,
+    "num_leaves": 40,
+    "min_child_samples": 20,
+    "max_depth": 3,
+    "learning_rate": 0.01
+  },
+  "mlp_h48_s4": {
+    "solver": "sgd",
+    "max_iter": 2000,
+    "learning_rate_init": 0.05,
+    "learning_rate": "constant",
+    "hidden_layer_sizes": [
+      64,
+      32,
+      16
+    ],
+    "early_stopping": true,
+    "alpha": 0.1,
+    "activation": "tanh"
+  },
+  "decision_tree_h48_s5": {
+    "splitter": "random",
+    "min_samples_split": 10,
+    "min_samples_leaf": 2,
+    "max_features": 0.5,
+    "max_depth": 3,
+    "criterion": "friedman_mse"
+  },
+  "random_forest_h48_s5": {
+    "n_estimators": 200,
+    "min_samples_split": 10,
+    "min_samples_leaf": 1,
+    "max_samples": 0.9,
+    "max_features": "log2",
+    "max_depth": 5
+  },
+  "svr_h48_s5": {
+    "kernel": "linear",
+    "gamma": "auto",
+    "epsilon": 0.5,
+    "degree": 4,
+    "coef0": 0.0,
+    "C": 0.01
+  },
+  "catboost_h48_s5": {
+    "verbose": 0,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 3,
+    "iterations": 100,
+    "depth": 6
+  },
+  "xgboost_h48_s5": {
+    "subsample": 0.5,
+    "reg_lambda": 0.1,
+    "reg_alpha": 0.5,
+    "min_child_weight": 1,
+    "max_depth": 7,
+    "learning_rate": 0.01,
+    "gamma": 0.3
+  },
+  "lgbm_h48_s5": {
+    "verbose": -1,
+    "subsample": 0.8,
+    "reg_lambda": 0,
+    "reg_alpha": 1.0,
+    "num_leaves": 20,
+    "min_child_samples": 20,
+    "max_depth": 3,
+    "learning_rate": 0.01
+  },
+  "mlp_h48_s5": {
+    "solver": "adam",
+    "max_iter": 2000,
+    "learning_rate_init": 0.05,
+    "learning_rate": "constant",
+    "hidden_layer_sizes": [
+      64
+    ],
+    "early_stopping": true,
+    "alpha": 0.1,
+    "activation": "tanh"
+  },
+  "decision_tree_h48_s6": {
+    "splitter": "random",
+    "min_samples_split": 10,
+    "min_samples_leaf": 10,
+    "max_features": "log2",
+    "max_depth": 3,
+    "criterion": "squared_error"
+  },
+  "random_forest_h48_s6": {
+    "n_estimators": 50,
+    "min_samples_split": 5,
+    "min_samples_leaf": 1,
+    "max_samples": 0.8,
+    "max_features": "log2",
+    "max_depth": 5
+  },
+  "svr_h48_s6": {
+    "kernel": "rbf",
+    "gamma": "auto",
+    "epsilon": 0.1,
+    "degree": 4,
+    "coef0": 1.0,
+    "C": 0.1
+  },
+  "catboost_h48_s6": {
+    "verbose": 0,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 1,
+    "iterations": 100,
+    "depth": 4
+  },
+  "xgboost_h48_s6": {
+    "subsample": 0.8,
+    "reg_lambda": 0,
+    "reg_alpha": 0,
+    "min_child_weight": 1,
+    "max_depth": 3,
+    "learning_rate": 0.01,
+    "gamma": 0.1
+  },
+  "lgbm_h48_s6": {
+    "verbose": -1,
+    "subsample": 0.5,
+    "reg_lambda": 0.5,
+    "reg_alpha": 1.0,
+    "num_leaves": 31,
+    "min_child_samples": 20,
+    "max_depth": 3,
+    "learning_rate": 0.01
+  },
+  "mlp_h48_s6": {
+    "solver": "sgd",
+    "max_iter": 1000,
+    "learning_rate_init": 0.05,
+    "learning_rate": "adaptive",
+    "hidden_layer_sizes": [
+      32,
+      16
+    ],
+    "early_stopping": true,
+    "alpha": 0.1,
+    "activation": "relu"
+  },
+  "decision_tree_h48_s7": {
+    "splitter": "random",
+    "min_samples_split": 20,
+    "min_samples_leaf": 5,
+    "max_features": 0.5,
+    "max_depth": 3,
+    "criterion": "squared_error"
+  },
+  "random_forest_h48_s7": {
+    "n_estimators": 150,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_samples": null,
+    "max_features": "sqrt",
+    "max_depth": 3
+  },
+  "svr_h48_s7": {
+    "kernel": "poly",
+    "gamma": "scale",
+    "epsilon": 0.5,
+    "degree": 2,
+    "coef0": 0.0,
+    "C": 0.1
+  },
+  "catboost_h48_s7": {
+    "verbose": 0,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 5,
+    "iterations": 100,
+    "depth": 4
+  },
+  "xgboost_h48_s7": {
+    "subsample": 0.5,
+    "reg_lambda": 0.1,
+    "reg_alpha": 0.1,
+    "min_child_weight": 5,
+    "max_depth": 3,
+    "learning_rate": 0.01,
+    "gamma": 0.1
+  },
+  "lgbm_h48_s7": {
+    "verbose": -1,
+    "subsample": 0.5,
+    "reg_lambda": 0,
+    "reg_alpha": 0.1,
+    "num_leaves": 20,
+    "min_child_samples": 20,
+    "max_depth": 3,
+    "learning_rate": 0.01
+  },
+  "mlp_h48_s7": {
+    "solver": "sgd",
+    "max_iter": 1000,
+    "learning_rate_init": 0.05,
+    "learning_rate": "constant",
+    "hidden_layer_sizes": [
+      64
+    ],
+    "early_stopping": true,
+    "alpha": 0.01,
+    "activation": "relu"
+  },
+  "decision_tree_h48_s8": {
+    "splitter": "best",
+    "min_samples_split": 2,
+    "min_samples_leaf": 5,
+    "max_features": 0.5,
+    "max_depth": 3,
+    "criterion": "friedman_mse"
+  },
+  "random_forest_h48_s8": {
+    "n_estimators": 150,
+    "min_samples_split": 10,
+    "min_samples_leaf": 5,
+    "max_samples": 0.8,
+    "max_features": null,
+    "max_depth": 2
+  },
+  "svr_h48_s8": {
+    "kernel": "poly",
+    "gamma": "scale",
+    "epsilon": 0.5,
+    "degree": 3,
+    "coef0": 0.0,
+    "C": 0.01
+  },
+  "catboost_h48_s8": {
+    "verbose": 0,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 5,
+    "iterations": 100,
+    "depth": 6
+  },
+  "xgboost_h48_s8": {
+    "subsample": 0.8,
+    "reg_lambda": 0.1,
+    "reg_alpha": 1.0,
+    "min_child_weight": 5,
+    "max_depth": 3,
+    "learning_rate": 0.01,
+    "gamma": 0
+  },
+  "lgbm_h48_s8": {
+    "verbose": -1,
+    "subsample": 0.5,
+    "reg_lambda": 0,
+    "reg_alpha": 1.0,
+    "num_leaves": 40,
+    "min_child_samples": 20,
+    "max_depth": 3,
+    "learning_rate": 0.01
+  },
+  "mlp_h48_s8": {
+    "solver": "sgd",
+    "max_iter": 2000,
+    "learning_rate_init": 0.01,
+    "learning_rate": "constant",
+    "hidden_layer_sizes": [
+      32,
+      16
+    ],
+    "early_stopping": true,
+    "alpha": 0.1,
+    "activation": "relu"
+  },
+  "decision_tree_h48_s9": {
+    "splitter": "random",
+    "min_samples_split": 2,
+    "min_samples_leaf": 1,
+    "max_features": 0.5,
+    "max_depth": 3,
+    "criterion": "friedman_mse"
+  },
+  "random_forest_h48_s9": {
+    "n_estimators": 50,
+    "min_samples_split": 10,
+    "min_samples_leaf": 2,
+    "max_samples": null,
+    "max_features": null,
+    "max_depth": 3
+  },
+  "svr_h48_s9": {
+    "kernel": "linear",
+    "gamma": "scale",
+    "epsilon": 0.5,
+    "degree": 3,
+    "coef0": 0.5,
+    "C": 0.01
+  },
+  "catboost_h48_s9": {
+    "verbose": 0,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 5,
+    "iterations": 300,
+    "depth": 4
+  },
+  "xgboost_h48_s9": {
+    "subsample": 1.0,
+    "reg_lambda": 1.0,
+    "reg_alpha": 0,
+    "min_child_weight": 5,
+    "max_depth": 3,
+    "learning_rate": 0.1,
+    "gamma": 0.3
+  },
+  "lgbm_h48_s9": {
+    "verbose": -1,
+    "subsample": 0.5,
+    "reg_lambda": 0.1,
+    "reg_alpha": 0.1,
+    "num_leaves": 50,
+    "min_child_samples": 50,
+    "max_depth": 3,
+    "learning_rate": 0.01
+  },
+  "mlp_h48_s9": {
+    "solver": "adam",
+    "max_iter": 1500,
+    "learning_rate_init": 0.05,
+    "learning_rate": "adaptive",
+    "hidden_layer_sizes": [
+      32,
+      16
+    ],
+    "early_stopping": true,
+    "alpha": 0.1,
+    "activation": "relu"
+  },
+  "decision_tree_h48_s10": {
+    "splitter": "random",
+    "min_samples_split": 2,
+    "min_samples_leaf": 2,
+    "max_features": "log2",
+    "max_depth": 3,
+    "criterion": "squared_error"
+  },
+  "random_forest_h48_s10": {
+    "n_estimators": 150,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_samples": 0.9,
+    "max_features": null,
+    "max_depth": 3
+  },
+  "svr_h48_s10": {
+    "kernel": "rbf",
+    "gamma": "auto",
+    "epsilon": 0.5,
+    "degree": 2,
+    "coef0": 1.0,
+    "C": 0.01
+  },
+  "catboost_h48_s10": {
+    "verbose": 0,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 3,
+    "iterations": 300,
+    "depth": 6
+  },
+  "xgboost_h48_s10": {
+    "subsample": 0.5,
+    "reg_lambda": 1.0,
+    "reg_alpha": 0,
+    "min_child_weight": 1,
+    "max_depth": 5,
+    "learning_rate": 0.01,
+    "gamma": 0.1
+  },
+  "lgbm_h48_s10": {
+    "verbose": -1,
+    "subsample": 1.0,
+    "reg_lambda": 0,
+    "reg_alpha": 0.5,
+    "num_leaves": 50,
+    "min_child_samples": 50,
+    "max_depth": 3,
+    "learning_rate": 0.01
+  },
+  "mlp_h48_s10": {
+    "solver": "sgd",
+    "max_iter": 1000,
+    "learning_rate_init": 0.05,
+    "learning_rate": "constant",
+    "hidden_layer_sizes": [
+      64,
+      32,
+      16
+    ],
+    "early_stopping": true,
+    "alpha": 0.1,
+    "activation": "tanh"
+  }
+}
