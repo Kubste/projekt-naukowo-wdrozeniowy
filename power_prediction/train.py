@@ -12,7 +12,7 @@ from sklearn.neural_network import MLPRegressor
 from catboost import CatBoostRegressor
 from xgboost import XGBRegressor
 from lightgbm import LGBMRegressor
-from sklearn.model_selection import RepeatedStratifiedKFold
+from sklearn.model_selection import RepeatedKFold
 from sklearn.metrics import mean_absolute_error, r2_score, mean_squared_error, mean_absolute_percentage_error
 
 
@@ -30,7 +30,7 @@ models = {
     "mlp":            MLPRegressor(**all_best_params["mlp"], early_stopping=True)
     }
 
-skf = RepeatedStratifiedKFold(n_splits=2, n_repeats=5, random_state=44)
+skf = RepeatedKFold(n_splits=2, n_repeats=5, random_state=44)
 mean_scores = pd.DataFrame(columns=["model", "MSE", "MAE", "R^2", "MAPE"])
 
 for i in range(1, 5):      # load train, test data
@@ -51,7 +51,7 @@ for i in range(1, 5):      # load train, test data
             X_train = data.iloc[train]
             y_train = targets.iloc[train]
             X_test = data.iloc[test]
-            y_test = data.iloc[test]
+            y_test = targets.iloc[test]
             # train model
             model = clone(model)
             model.fit(X_train, y_train)
@@ -61,7 +61,7 @@ for i in range(1, 5):      # load train, test data
             cur_mae = mean_absolute_error(y_test, y_pred)
             cur_r2 = r2_score(y_test, y_pred)
             cur_mape = mean_absolute_percentage_error(y_test, y_pred)
-            scores.loc[j] = [i, cur_mse, cur_mae, cur_r2, cur_mape]
+            scores.loc[j] = [cur_mse, cur_mae, cur_r2, cur_mape]
             # check if model has better metric than current best
             if cur_mse < mse:
                 cnt += 1
