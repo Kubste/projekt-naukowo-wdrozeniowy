@@ -17,7 +17,6 @@ data = data.drop(columns=["time", "p_base", "delta_p"])
 
 all_best_params = {}
 
-parameters = {'criterion':['squared_error', 'friedman_mse', 'absolute_error', 'poisson'], 'splitter':['best', 'random']}
 
 decision_tree_params = dict(
     max_depth=[None, 3, 5, 10, 20],

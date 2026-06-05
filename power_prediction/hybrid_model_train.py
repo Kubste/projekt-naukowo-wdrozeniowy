@@ -25,7 +25,7 @@ base_learners = []
 for i in range(4):
     base_learners.append([])
     for name in models:
-        with open(rf"power_prediction\models\{name}{i+1}.pkl", "rb") as f:
+        with open(rf"power_prediction\models\{name}_loc{i+1}.pkl", "rb") as f:
             model = load(f)
             base_learners[i].append((name, model))
 
@@ -62,7 +62,7 @@ for i in range(1,5):
         cur_mae = mean_absolute_error(y_test, y_pred)
         cur_r2 = r2_score(y_test, y_pred)
         cur_mape = mean_absolute_percentage_error(y_test, y_pred)
-        scores.loc[i-1] = [cur_mse, cur_mae, cur_r2, cur_mape]
+        scores.loc[j-1] = [cur_mse, cur_mae, cur_r2, cur_mape]
         # check if model has better metric than current best
         if cur_mse < mse:
             cnt += 1
@@ -85,7 +85,7 @@ for i in range(1,5):
     p_values_list = []
     for metric in metrics:
         _, p_value = wilcoxon(xgb_scores[metric], scores[metric])
-        p_values_list.append(p_value)s
+        p_values_list.append(p_value)
                 
     test_results.loc[i-1] = p_values_list
 
